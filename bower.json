@@ -1,0 +1,17 @@
+{
+  "name": "facebook-md",
+  "homepage": "https://github.com/harley008/facebook-md",
+  "authors": [
+    "Harley Dela Cruz <harllydelacruz008@hotmail.com>"
+  ],
+  "description": "material design for facebook",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

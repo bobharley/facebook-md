@@ -1,0 +1,19 @@
+{
+  "name": "facebook-md",
+  "version": "1.0.0",
+  "description": "material design for facebook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harley008/facebook-md.git"
+  },
+  "author": "Harley Dela Cruz <harllydelacruz008@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harley008/facebook-md/issues"
+  },
+  "homepage": "https://github.com/harley008/facebook-md#readme"
+}

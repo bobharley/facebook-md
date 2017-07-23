@@ -1,0 +1,49 @@
+{
+  "manifest_version": 2,
+  "name": "Facebook Material Design",
+  "version": "0.0.1",
+
+  "description": "Material design for facebook",
+  "icons": {
+    "16": "prod/img/favicon_16.png",
+    "32": "prod/img/favicon_32.png",
+    "48": "prod/img/favicon_48.png",
+    "128": "prod/img/favicon_128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "prod/img/favicon_16.png",
+      "32": "prod/img/favicon_32.png",
+      "48": "prod/img/favicon_48.png",
+      "128": "prod/img/favicon_128.png"
+    },
+    "default_title": "Facebook Material Design"
+  },
+  "content_security_policy": "script-src 'self' https://connect.facebook.net; object-src 'self'",
+  "content_scripts": [{
+    "run_at": "document_start",
+    "css": ["prod/css/vendor.css", "prod/css/main.css"],
+    "matches": [
+      "https://www.facebook.com/*",
+      "https://facebook.com/*",
+      "https://web.facebook.com/*",
+      "http://www.facebook.com/*",
+      "http://facebook.com/*",
+      "http://web.facebook.com/*"
+    ]
+  }],
+  "web_accessible_resources": [
+    "prod/img/*.png",
+    "prod/fonts/*"
+  ],
+  "permissions": [
+      "https://www.facebook.com/*",
+      "https://facebook.com/*",
+      "https://web.facebook.com/*",
+      "http://www.facebook.com/*",
+      "http://facebook.com/*",
+      "http://web.facebook.com/*",
+      "https://connect.facebook.net/en_US/all.js"
+  ],
+  "author": "Harley Dela Cruz <harllydelacruz008@hotmail.com>"
+}
