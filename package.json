@@ -15,5 +15,17 @@
   "bugs": {
     "url": "https://github.com/harley008/facebook-md/issues"
   },
-  "homepage": "https://github.com/harley008/facebook-md#readme"
+  "homepage": "https://github.com/harley008/facebook-md#readme",
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jsonfile": "^3.0.1",
+    "node-notifier": "^5.1.2"
+  }
 }
