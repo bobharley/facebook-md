@@ -1,0 +1,6 @@
+{
+  "path" : [
+    "dev/fonts/MaterialIcons-Regular.*",
+    "dev/fonts/*.ttf"
+  ]
+}

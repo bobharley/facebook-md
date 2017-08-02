@@ -12,14 +12,14 @@
       imagemin = require('gulp-imagemin'),
       jsonfile = require('jsonfile');
 
-  // var fonts = jsonfile.readFileSync('dev/fonts/fonts.json');
+  var fonts = jsonfile.readFileSync('dev/fonts/fonts.json');
 
-  gulp.task('default', ['getImages', 'buildSass', 'buildSassVendor', 'watch']);
+  gulp.task('default', ['getImages', 'getFonts', 'buildSass', 'buildSassVendor', 'watch']);
 
-  // gulp.task('getFonts', function() {
-  //   return gulp.src(fonts.path)
-  //   .pipe(gulp.dest('prod/fonts/'));
-  // });
+  gulp.task('getFonts', function() {
+    return gulp.src(fonts.path)
+    .pipe(gulp.dest('prod/fonts/'));
+  });
 
   gulp.task('getImages', function() {
     gulp.src([
@@ -32,11 +32,11 @@
 
   gulp.task('buildSass', function() {
     gulp.src([
-      'dev/styles/**/[^_]*',
+      'dev/styles/**/[^_]*.?(s)css',
       '!dev/styles/vendor.scss'
     ])
     .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(sass({outputStyle: 'compact'}).on('error', function (err) {
+    .pipe(sass({outputStyle: 'compressed'}).on('error', function (err) {
       gutil.log(gutil.colors.bold.red('Sass compile error'), err.message);
       notifier.notify({title: "Sass compile error", message: err.message});
       this.emit('end');
@@ -49,7 +49,7 @@
   gulp.task('buildSassVendor', function() {
     gulp.src('dev/styles/vendor.scss')
     .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(sass({outputStyle: 'compact'}).on('error', function (err) {
+    .pipe(sass({outputStyle: 'compressed'}).on('error', function (err) {
       gutil.log(gutil.colors.bgRed("Sass compile error (vendor)"), gutil.colors.bgBlue(err.message));
       notifier.notify({title: "Sass compile error (vendor)", message: err.message });
       this.emit("end");
@@ -61,6 +61,6 @@
   gulp.task('watch', function() {
     gulp.watch('dev/styles/main.scss', ['buildSass']);
     gulp.watch('dev/styles/vendor.scss', ['buildSassVendor']);
-    // gulp.watch(fonts.path, ['getFonts']);
+    gulp.watch(fonts.path, ['getFonts']);
   });
 }());
