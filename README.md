@@ -8,5 +8,5 @@ This will create the ```prod``` folder.
 ### Installation
 Drag the ```prod``` folder to chrome://extensions
 
-### Issues
-Needs to be updated everytime facebook updates their ui.
+### Note
+Might need to update everytime facebook updates their ui.
