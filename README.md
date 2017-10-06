@@ -28,7 +28,7 @@ If you are a beginner, please refer to the contribution flow below :
 
 1. ``` Fork ``` this repo
 2. After this repo is forked, click the **GREEN** button and copy the HTTPS link to your clipboard
-3. Type in the command ``` git clone "the-https-link" && cd "the-repo-name" ```
+3. Type in the command ``` git clone "the-https-link" && cd _$ ```
 4. Create a branch **DON'T APPLY CHANGES DIRECTLY TO THE MASTER BRANCH**
 ``` git checkout -b 'branch-name' ```
 5. Apply some changes and type in the commands, respectively:
