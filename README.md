@@ -14,7 +14,7 @@ Drag the root folder to ```chrome://extensions```
 
 ### Notes
 
-You can contribute by changing the styles of the newsfeed. You can use [fb-md.png](./master/fm-md.png) as a design reference.
+You can contribute by changing the styles of the newsfeed. You can use [fb-md.png](./fb-md.png) as a design reference.
 When you contribute, please update CONTRIBUTING.md with your names along with the changes you have commited.
 
 The naming format will be as follows:
