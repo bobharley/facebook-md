@@ -4,6 +4,7 @@ A chrome extension that transforms facebook styles into material design
 ### Pre-requisites
 - [NodeJS](https://nodejs.org)
 - [Git](https://git-scm.com/downloads)
+- [Gulp](https://www.npmjs.com/package/gulp)
 
 ### Build
 Run ```npm install && gulp```
@@ -38,4 +39,7 @@ git push -u origin "your_branch_name"
 ```
 6. Github will update immediately, just click on **Create Pull Request** and you're done!
 
-Might need to update everytime facebook updates their ui.
+### Additional Notes
+
+This Extension only alters the default css of facebook web ui.
+It might need to be updated when facebook updates their ui.
